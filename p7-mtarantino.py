@@ -7,6 +7,12 @@ set. Sets are unique so repetitive lines will be ignored in the set. After all
 lines have been checked, the program will calculate the length of the set and
 return the unique number of senders to the user.
 """
+import re
+
+#custom method that uses re to regex the email. If the email does
+#not match the regex, false is returned.
+def valid_email(email):
+    return re.match(r"[^@]+@[^@]+\.[^@]+", email)
 
 #prompts the user for the filename, with error handling.
 try:
@@ -45,6 +51,12 @@ for line in file:
     try:
         #gets the remainder of the line after the : In this case its the email address.
         line = line.split(': ')[1]
+
+        #if the parsed email is not valid, then raise an error. This error will
+        #be caught by the except and a message will be returned the user.
+        if not valid_email(line):
+            raise Exception('Malformed email detected!')
+
         #adds the parsed line to the set. Items already in the set will be ignored.
         items.add(line)
     except:
