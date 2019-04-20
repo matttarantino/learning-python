@@ -8,7 +8,7 @@ compute the average and return it to the user.
 """
 
 #custom method that calculates the average by taking an array as an input, and
-#divides the num of the array by the number of items in the array.
+#divides the sum of the array by the number of items in the array.
 def average(numbers):
     return sum(numbers) / len(numbers)
 
