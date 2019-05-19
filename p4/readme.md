@@ -40,7 +40,7 @@ Take a guess. 9
 
 Good job, Jim! You guessed my number in 5 guesses!
 
-If Jim hadn’t found the number in 6 tries, the script would say “The number I was thinking of was __"
+If Jim hadn’t found the number in 6 tries, the script would say “The number I was thinking of was __ "
 
 Your solution should include a function that takes two parameters, the number to be guessed and the number that was guessed and returns:
 
