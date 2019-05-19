@@ -20,7 +20,7 @@ score >= 93: A
 
 Since legal scores generally fall between 0 and 100, your script should reject numbers above 100 or below 0.
 
-The **input(), float()** and **print()** functions are important as are conditionals and **try/except**.   Note that **input()** returns a string and not a number so you'll need to convert the value returned to a floating point number before comparing it to other numbers. Calling float('twenty') will fail and raise an exception which you can catch and respond appropriately using try/except.
+The **input(), float()** and **print()** functions are important as are conditionals and **try/except**.   Note that **input()** returns a string and not a number so you'll need to convert the value returned to a floating point number before comparing it to other numbers. Calling **float('twenty')** will fail and raise an exception which you can catch and respond appropriately using **try/except**.
 
 Be sure to test your program on at least the following test inputs:
 
